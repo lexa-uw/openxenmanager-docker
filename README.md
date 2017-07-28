@@ -1,4 +1,4 @@
 Just run 
 ```bash
-docker-compose run -d openxenmanager
+docker-compose run -e DISPLAY=$(ipconfig getifaddr en0):0 openxenmanager
 ```

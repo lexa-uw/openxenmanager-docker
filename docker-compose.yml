@@ -8,8 +8,6 @@ services:
     # docker run --rm -d --name firefox -e DISPLAY=$(ipconfig getifaddr en0):0 -v /tmp/.X11-unix:/tmp/.X11-unix jess/firefox
     build: ./docker
     container_name: openxenmanager
-    environment:
-      - DISPLAY=192.168.1.52:0
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
       - ./mnt/root/.local/share:/root/.local/share
